@@ -1,0 +1,86 @@
+// Inheritance Program made by Charles Gibbone
+
+
+public class Human
+{  
+
+	public Human()
+
+		{        
+
+		System.out.println("A new human appeared!: \n");       
+
+		} 	
+
+  public void eat() 
+
+		{        
+
+		System.out.println("A human eats");
+
+		}
+
+	public void sleep() 
+
+		{        
+
+		System.out.println("A human sleeps");       
+
+		}    
+
+
+	public static void main(String args[])
+
+	{      
+
+		Baby baby = new Baby();      
+
+		baby.eat();      
+
+		baby.sleep();      
+
+		baby.cry(); 
+
+
+	public static class Baby extends Human
+
+		{    
+
+			public Baby()
+
+			{        
+
+				super();        
+
+				System.out.println("A new baby has been created! \n");      
+
+			} 
+
+      public void eat()
+
+			{        
+
+			System.out.println("A baby eats...");
+
+			}
+
+
+			public void sleep()
+
+			{        
+
+			System.out.println("A baby sleeps");      
+
+			}    
+
+			public void cry() 
+
+			{        
+
+			System.out.println("A baby cries\n");      
+
+			}      
+		}
+	}
+
+	}
